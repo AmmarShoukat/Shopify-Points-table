@@ -1,0 +1,60 @@
+<div class="huzi-testi-sec" id="huzi-testi-sec">
+  <div class="container">
+    <h3 class="huzi-h36">{{ section.settings.testmonial_head }}</h3>
+    <div class="huzi-testi-slider">
+      {% for block in section.blocks %}
+    	<div class="huzi-col33">
+          <img src="{{ block.settings.testimonial_img | img_url: 'master' }}">
+          <div class="testi_desc">
+           <div class="huzi-rating">★★★★★</div>
+            <div class="huzi-p">{{ block.settings.testimonial_desc }}</div>
+            <span class="huzi-testi-author">{{ block.settings.testimonial_author }}</span>
+          </div>
+      	</div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "NWS Testimonial",
+    "settings": [
+        {
+          "type": "text",
+          "id": "testmonial_head",
+            "label":"Heading"
+        }
+	],
+	"blocks": [
+    {
+      "type": "text",
+      "name": "Testimonial",
+      "settings": [
+          {
+              "type": "image_picker",
+              "id": "testimonial_img",
+              "label":"Image"
+          },
+          {
+              "type": "textarea",
+              "id": "testimonial_desc",
+              "label":"Testimonial Description"
+          },
+          {
+              "type": "text",
+              "id": "testimonial_author",
+              "label":"Testimonial Author"
+          }
+		]
+    }
+  ],
+    "presets": [
+      {
+        "name": "Nws Testimonial",
+        "category": "0.1 Nws"
+      }
+    ]
+  }
+{% endschema %}
+
