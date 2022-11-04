@@ -1,0 +1,80 @@
+/* product table */
+.huzi-product-table {
+	width: 100%;
+	max-width: 1000px;
+	position: relative;
+	margin: 0 auto;
+	padding: 20px 0 150px 0;
+}
+.huzi-rst-body {
+	display: flex;
+	text-align: center;
+}
+.huzi-rst-table .huzi-rst-col1 {
+	width: 45%;
+}
+.huzi-rst-table .huzi-rst-col2 {
+	width: 20%;
+}
+.huzi-rst-table .huzi-rst-col3 {
+	width: 35%;
+}
+.huzi-rst-table {
+	position: relative;
+	width: 100%;
+	padding: 18px 0;
+}
+.huzi-rst-left {
+	width: 35%;
+	background: #d9d9d9;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 14px #0000000d;
+	border-radius: 60px;
+	height: calc(100% + 100px);
+	position: absolute;
+	right: 0;
+	bottom: -46px;
+}
+.huzi-rst-table .huzi-rst-body .huzi-rst-col1,
+.huzi-rst-table .huzi-rst-body .huzi-rst-col2,
+.huzi-rst-table .huzi-rst-body .huzi-rst-col3 {
+	padding: 18px 0;
+}
+.huzi-rst-table .huzi-rst-col2 h3 {
+	font-weight: bold;
+	font-size: 26px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	line-height: 1;
+}
+.huzi-rst-table .huzi-rst-body .huzi-rst-col1 {
+	border-right: 2px solid #999999;
+}
+.huzi-rst-table .huzi-rst-body .huzi-rst-col1 {
+	padding-right: 18px;
+	padding-left: 18px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+    justify-content: center;
+}
+.huzi-table-col {
+	background: #2e2e2e;
+	position: relative;
+}
+.huzi-product-table .huzi-h36 {
+	text-align: center;
+	margin-bottom: 125px;
+}
+.huzi-rst-header {
+	display: flex;
+	text-align: center;
+	align-items: flex-end;
+	padding: 10px 0 35px 0;
+}
+.huzi-rst-table .huzi-rst-body .huzi-rst-col1 span {
+	font-size: 18px;
+	font-weight: 500;
+}
